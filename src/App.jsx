@@ -1,5 +1,7 @@
 import About from "./components/About";
+import Features from "./components/Features";
 import Header from "./components/Header";
+
 import "./sass/main.scss";
 
 function App() {
@@ -7,6 +9,7 @@ function App() {
     <>
       <Header />
       <About />
+      <Features />
     </>
   );
 }
