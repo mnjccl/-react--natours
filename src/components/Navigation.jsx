@@ -7,7 +7,7 @@ function Navigation() {
         id="navigation-toggle"
       />
       <label htmlFor="navigation-toggle" className="navigation__button">
-        MENU
+        <span className="navigation__icon">&nbsp;</span>
       </label>
       <div className="navigation__background">&nbsp;</div>
       <nav className="navigation__nav">
