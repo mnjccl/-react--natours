@@ -4,6 +4,7 @@ import Features from "./components/Features";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
+import Popup from "./components/Popup";
 import Stories from "./components/Stories";
 import Tours from "./components/Tours";
 
@@ -20,6 +21,7 @@ function App() {
       <Stories />
       <Booking />
       <Footer />
+      <Popup />
     </>
   );
 }
