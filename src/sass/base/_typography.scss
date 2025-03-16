@@ -6,7 +6,6 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: $color-grey-dark;
-  padding: 3rem;
 }
 
 .heading-primary {
@@ -22,6 +21,11 @@ body {
     letter-spacing: 3.5rem;
 
     animation: moveInLeft 1s ease-out;
+
+    @include responsive(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
   }
 
   &--sub {
@@ -31,6 +35,10 @@ body {
     letter-spacing: 1.7rem;
 
     animation: moveInRight 1s ease-out;
+
+    @include responsive(phone) {
+      letter-spacing: 0.5rem;
+    }
   }
 }
 
@@ -49,6 +57,14 @@ body {
   color: transparent;
   transition: all 0.2s;
   letter-spacing: 0.2rem;
+
+  @include responsive(tablet-portrait) {
+    font-size: 3rem;
+  }
+
+  @include responsive(phone) {
+    font-size: 2.5rem;
+  }
 
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
