@@ -16,7 +16,7 @@
     display: block;
     transition: all 0.3s;
 
-    @include respoond(tablet-portrait) {
+    @include responsive(tablet-portrait) {
       width: 100%;
     }
 
@@ -54,7 +54,7 @@
     width: 50%;
     display: inline-block;
 
-    @include respoond(tablet-portrait) {
+    @include responsive(tablet-portrait) {
       width: 100%;
       margin-bottom: 2rem;
     }
