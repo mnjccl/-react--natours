@@ -1,6 +1,9 @@
-import nat1 from "../imgs/nat-1-large.jpg";
-import nat2 from "../imgs/nat-2-large.jpg";
-import nat3 from "../imgs/nat-3-large.jpg";
+import nat1 from "../imgs/nat-1.jpg";
+import nat2 from "../imgs/nat-2.jpg";
+import nat3 from "../imgs/nat-3.jpg";
+import natLarge1 from "../imgs/nat-1-large.jpg";
+import natLarge2 from "../imgs/nat-2-large.jpg";
+import natLarge3 from "../imgs/nat-3-large.jpg";
 
 function About() {
   return (
@@ -39,21 +42,25 @@ function About() {
         <div className="col-1-of-2">
           <div className="composition">
             <img
-              src={nat1}
+              srcSet={`${nat1} 300w, ${natLarge1} 1000w`}
+              sizes="(max-width:900px) 20vw, (max-width:600px) 30vw, 300px"
+              src={natLarge1}
               alt="Photo 1"
               className="composition__photo composition__photo--p1"
             />
-          </div>
-          <div className="composition">
+
             <img
-              src={nat2}
+              srcSet={`${nat2} 300w, ${natLarge2} 1000w`}
+              sizes="(max-width:900px) 20vw, (max-width:600px) 30vw, 300px"
+              src={natLarge2}
               alt="Photo 2"
               className="composition__photo composition__photo--p2"
             />
-          </div>
-          <div className="composition">
+
             <img
-              src={nat3}
+              srcSet={`${nat3} 300w, ${natLarge3} 1000w`}
+              sizes="(max-width:900px) 20vw, (max-width:600px) 30vw, 300px"
+              src={natLarge3}
               alt="Photo 3"
               className="composition__photo composition__photo--p3"
             />
