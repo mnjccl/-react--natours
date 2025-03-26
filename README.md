@@ -1,3 +1,6 @@
+LIVE DEMO HERE: https://natours-green-five.vercel.app/
+This project is presentational project where I show my skills with SCSS. For grid system I used float in whole project.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
