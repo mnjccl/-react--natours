@@ -1,7 +1,7 @@
 function Login() {
   return (
     <main>
-      <div className="login-content">
+      <div className="auth-content">
         <h2 className="heading-secondary ma-bt-lg">Log into your account</h2>
 
         <form action="#" className="form">

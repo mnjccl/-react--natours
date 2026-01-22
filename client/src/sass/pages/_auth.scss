@@ -1,0 +1,35 @@
+main {
+  background-color: $color-grey-dark-3;
+  min-height: calc(100vh - 6rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-content {
+  max-width: 60%;
+  padding: 3rem;
+  background-color: $color-white;
+  border-radius: 6px;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15);
+  text-align: center;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem;
+    text-align: left;
+
+    &__row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+
+    &__input {
+      width: 100%;
+      background-color: $color-grey-light-2;
+      border-radius: 6px;
+    }
+  }
+}
